@@ -1,0 +1,163 @@
+@import "../style.css";
+
+.location {
+    background: var(--gray-200);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.location p {
+    color: var(--gray-900);
+    margin-left: 15px;
+}
+
+.location i {
+    color: var(--gray-900);
+}
+
+.reserved {
+    padding-top: 20px;
+
+    background: var(--gray-100);
+}
+
+.reserved h1 {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.reserved p {
+    color: var(--gray-600);
+    font-weight: 300;
+    font-size: 19px;
+}
+
+.fonction_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.fonction_item {
+    position: relative;
+    width: calc(100% - 20px);
+    padding: 30px 30px;
+    background: var(--gray-100);
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px var(--gray-200);
+    transition: background .2s ease;
+}
+
+.fonction_item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.fonction_item:hover {
+    background: var(--primary-100);
+}
+
+.fonction_item:hover i {
+    color: var(--primary-300);
+}
+
+.fonction_item i {
+    color: var(--gray-400);
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.fonction_item p {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.fonction_item::before {
+    position: absolute;
+    left: -15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: var(--primary-300);
+}
+
+.fonction_item:nth-child(1)::before {
+    content: "1";
+}
+
+.fonction_item:nth-child(2)::before {
+    content: "2";
+}
+
+.fonction_item:nth-child(3)::before {
+    content: "3";
+}
+
+.restaurants {
+    padding-left: 5%;
+    padding-right: 5%;
+    background: var(--gray-200);
+}
+
+.restaurants .card_list {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.restaurants .card_item {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px var(--gray-400);
+    width: 40%;
+}
+
+.restaurants .card_img {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+.restaurants .card_img::after {
+    content: "Nouveau";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    background: var(--tertiary-100);
+    color: var(--tertiary-300);
+    font-weight: 500;
+    font-size: .9rem;
+    font-family: 'Shrikhand', sans-serif;
+}
+
+.restaurants .card_img img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.restaurants .card_bot {
+    padding: 10px 20px;
+}
+
+.restaurants .heart {
+    font-size: 1.5rem;
+}
+
+.restaurants .card_text p {
+    font-weight: 300;
+}
+
+@media (max-width: 740px) {
+    .restaurants .card_item {
+        width: 100%;
+    }
+}

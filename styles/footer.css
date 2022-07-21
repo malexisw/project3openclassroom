@@ -1,0 +1,15 @@
+footer {
+    background: var(--gray-900);
+    width: 100%;
+    padding: 20px 30px;
+    color: #ffffff;
+}
+
+footer p {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 1.2rem;
+}
+
+footer a {
+    font-weight: 300;
+}

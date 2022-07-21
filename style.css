@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&family=Shrikhand&display=swap');
+@import "./styles/index.css";
+@import "./styles/header.css";
+@import "./styles/footer.css";
+
+:root {
+    --primary-100: #f5edff;
+    --primary-300: #9356DC;
+
+    --secondary-100: #f5e6f7;
+    --secondary-300: #FF79DA;
+
+    --tertiary-100: #99E2D0;
+    --tertiary-300: #229b7d;
+
+    --gray-100: #f6f6f6;
+    --gray-200: #eaeaea;
+    --gray-300: #a1a1a1;
+    --gray-400: #777777;
+    --gray-600: #707070;
+    --gray-900: #353535;
+
+    --gradient-first: #e671da;
+    --gradient-last: #aa5edb;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a{
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flexCentered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexAlignCenter {
+    display: flex;
+    align-items: center;
+}
+
+.flexSpaceCentered {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blockCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textCentered {
+    text-align: center;
+}
+
+.roundedBtn {
+    padding: 15px 20px;
+    margin-top: 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    color: var(--secondary-100);
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.gradient {
+    background: linear-gradient(0deg, rgba(170, 94, 219, 1) 0%, rgba(230, 113, 218, 1) 100%);
+}
+
+.prl-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
