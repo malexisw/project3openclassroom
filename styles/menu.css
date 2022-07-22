@@ -76,6 +76,33 @@
     overflow: hidden;
 }
 
+.first,
+.second,
+.third,
+.fourth {
+    opacity: 0;
+
+    animation-duration: .3s;
+    animation-name: appear;
+    animation-fill-mode: forwards;
+}
+
+.first {
+    animation-delay: .1s;
+}
+
+.second {
+    animation-delay: .2s;
+}
+
+.third {
+    animation-delay: .3s;
+}
+
+.fourth {
+    animation-delay: .4s;
+}
+
 .menu .card_item .card_title {
     font-size: 1.1em;
     font-weight: 600;
@@ -135,4 +162,14 @@
 .menu .roundedBtn {
     padding: 15px 40px;
     font-weight: 500;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
