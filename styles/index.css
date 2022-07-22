@@ -148,8 +148,30 @@
     padding: 10px 20px;
 }
 
-.restaurants .heart {
+.restaurants .heart_border,
+.restaurants .heart_fill {
     font-size: 1.5rem;
+    transition: display .2s ease;
+    cursor: pointer;
+}
+
+.restaurants .heart .heart_fill {
+    display: none;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.restaurants .heart .heart_border {
+    display: block;
+}
+
+.restaurants .heart:hover .heart_fill {
+    display: block;
+}
+
+.restaurants .heart:hover .heart_border {
+    display: none;
 }
 
 .restaurants .card_text p {
