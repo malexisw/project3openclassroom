@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
     background: white;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: 100;
 
@@ -54,9 +54,11 @@
 
 @keyframes fade-out{
     from{
+        z-index: 100;
         opacity: 1;
     }
     to{
+        z-index: -1;
         opacity: 0;
     }
 }
