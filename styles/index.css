@@ -46,6 +46,7 @@
     background: var(--gray-100);
     border-radius: 20px;
     box-shadow: 0px 10px 10px var(--gray-200);
+    cursor: pointer;
     transition: background .2s ease;
 }
 
@@ -148,31 +149,24 @@
     padding: 10px 20px;
 }
 
-.restaurants .heart_border,
 .restaurants .heart_fill {
     font-size: 1.5rem;
-    transition: display .2s ease;
     cursor: pointer;
 }
 
-.restaurants .heart .heart_fill {
-    display: none;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.restaurants .heart .heart_fill .fa-heart {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
 }
 
-.restaurants .heart .heart_border {
-    display: block;
+.restaurants .heart .heart_fill .fa-heart:hover {
+    animation-name: fill-heart;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
 
-.restaurants .heart:hover .heart_fill {
-    display: block;
-}
-
-.restaurants .heart:hover .heart_border {
-    display: none;
-}
 
 .restaurants .card_text p {
     font-weight: 300;
@@ -181,5 +175,49 @@
 @media (max-width: 740px) {
     .restaurants .card_item {
         width: 100%;
+    }
+}
+
+@keyframes fill-heart {
+    0% {
+        -webkit-text-stroke-width: 0px;
+        background: linear-gradient(0deg, white 0%, white 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    20% {
+        -webkit-text-stroke-width: 0px;
+        background: linear-gradient(0deg, rgba(170, 94, 219, 1) 0%, rgba(230, 113, 218, 1) 20%, white 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    40% {
+        -webkit-text-stroke-width: 0px;
+        background: linear-gradient(0deg, rgba(170, 94, 219, 1) 0%, rgba(230, 113, 218, 1) 40%, white 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    60% {
+        -webkit-text-stroke-width: 0px;
+        background: linear-gradient(0deg, rgba(170, 94, 219, 1) 0%, rgba(230, 113, 218, 1) 60%, white 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    80% {
+        -webkit-text-stroke-width: 0px;
+        background: linear-gradient(0deg, rgba(170, 94, 219, 1) 0%, rgba(230, 113, 218, 1) 80%, white 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+        -webkit-text-stroke-width: 0px;
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
