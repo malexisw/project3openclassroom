@@ -5,6 +5,8 @@
 }
 
 .menu .top_title h1 {
+    font-size: 1.8em;
+    letter-spacing: 2px;
     font-family: 'Shrikhand', sans-serif;
 }
 
@@ -41,25 +43,6 @@
     height: 4px;
     width: 45px;
     background: var(--tertiary-100);
-}
-
-.taste_menu .heart .heart_fill {
-    display: none;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.taste_menu .heart .heart_border {
-    display: block;
-}
-
-.taste_menu .heart:hover .heart_fill {
-    display: block;
-}
-
-.taste_menu .heart:hover .heart_border {
-    display: none;
 }
 
 .menu .card_list {
