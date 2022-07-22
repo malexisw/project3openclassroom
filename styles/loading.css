@@ -1,0 +1,62 @@
+@import "../style.css";
+
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+
+    animation-name: fade-out;
+    animation-delay: 3s;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+}
+
+.dot{
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--gradient);
+
+    animation-name: loading-screen;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.d2{
+    animation-delay: .2s;
+}
+.d3{
+    animation-delay: .4s;
+}
+
+@keyframes loading-screen {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-out{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}

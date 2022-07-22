@@ -2,6 +2,7 @@
 @import "./styles/index.css";
 @import "./styles/header.css";
 @import "./styles/footer.css";
+@import "./styles/loading.css";
 
 :root {
     --primary-100: #f5edff;
