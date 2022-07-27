@@ -1,6 +1,6 @@
 @import "../style.css";
 
-.loading{
+.loading {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,7 @@
     animation-fill-mode: forwards;
 }
 
-.dot{
+.dot {
     content: "";
     width: 25px;
     height: 25px;
@@ -33,14 +33,16 @@
     animation-timing-function: ease-in-out;
 }
 
-.d2{
+.d2 {
     animation-delay: .2s;
 }
-.d3{
+
+.d3 {
     animation-delay: .4s;
 }
 
-main, footer{
+main,
+footer {
     visibility: hidden;
 
     animation-name: onloading-screen;
@@ -50,32 +52,36 @@ main, footer{
 }
 
 @keyframes loading-screen {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-50%);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
 
 @keyframes onloading-screen {
-    from{
+    from {
         visibility: hidden;
     }
-    to{
+
+    to {
         visibility: visible;
     }
 }
 
-@keyframes fade-out{
-    from{
+@keyframes fade-out {
+    from {
         z-index: 100;
         visibility: visible;
     }
-    to{
+
+    to {
         z-index: -1;
         visibility: hidden;
     }

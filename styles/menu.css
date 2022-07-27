@@ -10,7 +10,7 @@
     font-family: 'Shrikhand', sans-serif;
 }
 
-.menu .top_img{
+.menu .top_img {
     height: 250px;
 }
 
@@ -49,14 +49,14 @@
     background: var(--tertiary-100);
 }
 
-.menu_list{
+.menu_list {
     display: flex;
     justify-content: center;
     gap: 5%;
     flex-wrap: wrap;
 }
 
-.menu_item{
+.menu_item {
     width: 45%;
 }
 
@@ -174,14 +174,15 @@
 }
 
 @media (max-width: 920px) {
-    .menu .top_img{
+    .menu .top_img {
         height: auto;
     }
-    .menu_list{
+
+    .menu_list {
         display: block;
     }
-    
-    .menu_item{
+
+    .menu_item {
         width: auto;
     }
 }
