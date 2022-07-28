@@ -41,7 +41,7 @@
     animation-delay: .4s;
 }
 
-main,
+#home,
 footer {
     visibility: hidden;
 
